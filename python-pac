@@ -1,0 +1,23 @@
+import turtle
+import random
+
+ghost = turtle.Turtle()
+
+pac = turtle.Turtle()
+ghost.penup()
+pac.penup()
+
+ghost.pen(shown = False)
+pac.pen(shown = False)
+ghost.speed(10)
+pac.speed(10)
+ghost.color("green")
+pac.color('#fcbe03')
+
+
+ghost.goto(250, 250)
+pac.goto(-250, 250)
+
+ghost.pen(shown = True)
+pac.pen(shown = True)
+turtle.done()
